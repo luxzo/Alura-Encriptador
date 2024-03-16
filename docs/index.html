@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js"></script>
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <div class="logo-div"><img class="logo" src="img/logo.png" alt="Logo de Alura"></div>
+    </header>
+
+    <main class="pagina">
+        <section class="principal">
+            <div class="contenido">
+                <textarea name="mensaje-entrada" id="mensaje-entrada" class="texto-principal" placeholder="Ingrese el texto aquí"></textarea>
+                <p class="instrucciones">&#8505; Solo letras minúsculas y sin acentos</p>
+                <div class="botones">
+                    <button type="button" onclick="encriptar()" class="boton boton-azul">Encriptar</button>
+                    <button type="button" onclick="desencriptar()" class="boton">Desencriptar</button>
+                </div>    
+            </div>                    
+        </section>
+
+        <section class="resultado">
+            <div class="contenido">
+                <div class="resultado-contenido" id="resultado-contenido">
+                    <img src="img/muneco.png" alt="Muñeco" class="sin-mensaje-salida">
+                    <h2 class="sin-mensaje-salida">Ningún mensaje fue encontrado</h2>
+                    <p class="sin-mensaje-salida">Ingrese el texto que desee encriptar o desencriptar</p>
+                </div>
+                <div class="botones">
+                    <input type="button" value="Copiar" onclick="botonCopiar()" class="boton">
+                </div>
+            </div>            
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p><img src="./img/schnauzer-mini.png" alt="Extraño a mi amigo :'[" class="friend">&nbsp;Alura Challenge One - Encriptador. Realizado por Luis Momox. 2024</p>
+    </footer>
+</body>
+</html>
